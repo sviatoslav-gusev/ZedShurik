@@ -5,7 +5,7 @@
 #  ZedShurik
 
 Making Zed IDE at Windows ready to Configure/Build/Run C/C++ code.<br/>
-Requires Clang and Ninja.<br/>
+Requires Clang and Ninja. Use CMake 3.17+.<br/>
 Works only with projects based on CMakeLists.txt.
 
 </div>
@@ -16,10 +16,16 @@ C++ is fast.<br/> CMakeLists.txt are crossplatform.<br/>Zed IDE is fast.<br/> Ni
 But we cannot just install Zed and solve our tasks immediately.
 
 ## Solution
+
+There are files which will help to setup all you need to use ```Configure``` and ```Build & Run```.<br/>
+It supports creation both ```Debug``` and ```Release``` profiles sumultaneously in parallel directories. CMake 3.17+ is required. 
+
+## Howto
+
 0. Get Windows machine
 1. Install Clang
 2. Install Ninja
-3. Install Zed
+3. Install Zed (I do not remember if it includes CMake installation or not. Install CMake too if not.)
 4. Run Zed and do initial setup.
 5. Go to ```%AppData%\Zed``` in Explorer.
 6. Copy there ```tasks.json``` and all ```.ps1```-scripts.
