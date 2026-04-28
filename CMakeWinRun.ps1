@@ -27,5 +27,5 @@ if ($content -match 'add_executable\s*\(\s*([^\s)]+)') {
     }
 } else {
     Write-Host "--- [Running skipped] ---" -ForegroundColor Green
-    Write-Host "There is lib. Run is not requires." -ForegroundColor Yellow
+    Write-Host "There is lib. Run is not required." -ForegroundColor Yellow
 }
