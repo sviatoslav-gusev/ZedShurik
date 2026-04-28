@@ -10,6 +10,7 @@ cmake -G "Ninja Multi-Config" -S . -B build `
   "-DCMAKE_C_COMPILER=$($ToolPaths.ClangC)" `
   "-DCMAKE_CXX_COMPILER=$($ToolPaths.ClangCPP)" `
   "-DCMAKE_MAKE_PROGRAM=$($ToolPaths.Ninja)" `
+  "-DCMAKE_PREFIX_PATH=$($ToolPaths.QtPrefix)" `
   "--no-warn-unused-cli"
 
 if ($LASTEXITCODE -eq 0) {
