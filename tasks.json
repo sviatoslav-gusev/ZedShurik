@@ -1,0 +1,78 @@
+[
+  {
+    "label": "CMake: 1. Configure (Multi-Config)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/CMakeWinConfigure.ps1\""
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
+  },
+  {
+    "label": "CMake: 2. Build (DEBUG)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile", "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/CMakeWinBuild.ps1\" -Config Debug"
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
+  },
+  {
+    "label": "CMake: 2. Build (RELEASE)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/CMakeWinBuild.ps1\" -Config Release"
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
+  },
+  {
+    "label": "CMake: 3. Run (DEBUG)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/CMakeWinRun.ps1\" -Config Debug"
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
+  },
+  {
+    "label": "CMake: 3. Run (RELEASE)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/CMakeWinRun.ps1\" -Config Release"
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
+  },
+  {
+    "label": "CMake: 4. Build & Run (DEBUG)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/CMakeWinBuildAndRun.ps1\" -Config Debug"
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
+  },
+  {
+    "label": "CMake: 4. Build & Run (RELEASE)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/CMakeWinBuildAndRun.ps1\" -Config Release"
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
+  }
+]
