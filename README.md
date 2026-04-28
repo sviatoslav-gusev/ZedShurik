@@ -4,13 +4,13 @@
 
 #  ZedShurik
 
-Making Zed IDE at Windows ready to Configure/Build/Run C++ code.<br/>
+Making Zed IDE at Windows ready to Configure/Build/Run C/C++ code.<br/>
 Requires Clang and Ninja.<br/>
 Works only with projects based on CMakeLists.txt.
 
 </div>
 
-## Problem:
+## Problem
 
 C++ is fast.<br/> CMakeLists.txt are crossplatform.<br/>Zed IDE is fast.<br/> Ninja is fast.<br/> Clang has readable build logs.<br/> Windows is common.<br/>
 But we cannot just install Zed and solve our tasks immediately.
