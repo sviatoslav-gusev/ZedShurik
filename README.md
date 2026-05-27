@@ -4,7 +4,7 @@
 
 #  ZedShurik
 
-Making Zed IDE at Windows ready to Configure/Build/Run C/C++ code.<br/>
+Making Zed IDE at Windows ready to Configure/Build/Run C/C++ code (Qt compatible).<br/>
 Requires Clang, Ninja, CMake 3.17+.<br/>
 Works only with projects based on CMakeLists.txt.
 
