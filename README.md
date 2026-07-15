@@ -31,5 +31,5 @@ It supports creation both ```Debug``` and ```Release``` profiles sumultaneously 
 6. Copy there ```tasks.json``` and all ```.ps1```-scripts.
 7. Edit ```ToolPaths.ps1```. Replace all my default paths to Clang and Ninja with your actual ones.
 8. Open directory with C++ project containing ```CMakeLists.txt``` in Zed.
-9. Shift+Alt+R. Configure.
-10. Shift+Alt+R. Build & Run.
+9. Shift+Alt+R or Shift+Alt+T. Configure.
+10. Shift+Alt+R or Shift+Alt+T. Build & Run.
