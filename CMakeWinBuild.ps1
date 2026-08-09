@@ -4,8 +4,10 @@ param (
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
+. "$PSScriptRoot\ToolPaths.ps1"
+
 Write-Host "--- [Building $Config] ---" -ForegroundColor Cyan
-cmake --build build --config $Config
+& $ToolPaths.CMake --build build --config $Config
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "--- [Building $Config done] ---" -ForegroundColor Green

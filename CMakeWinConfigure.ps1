@@ -5,7 +5,7 @@
 
 Write-Host "--- [Configuring Project] ---" -ForegroundColor Cyan
 
-cmake -G "Ninja Multi-Config" -S . -B build `
+& $ToolPaths.CMake -G "Ninja Multi-Config" -S . -B build `
   "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON" `
   "-DCMAKE_C_COMPILER=$($ToolPaths.ClangC)" `
   "-DCMAKE_CXX_COMPILER=$($ToolPaths.ClangCPP)" `

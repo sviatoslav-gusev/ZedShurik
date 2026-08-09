@@ -74,5 +74,16 @@
     ],
     "use_new_terminal": false,
     "show_summary": true
+  },
+  {
+    "label": "C++: Run Active File (No CMake)",
+    "command": "powershell",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-Command", "cd .; & \"$env:APPDATA/Zed/RunSingleCpp.ps1\" -File \"$ZED_FILE\""
+    ],
+    "use_new_terminal": false,
+    "show_summary": true
   }
 ]
