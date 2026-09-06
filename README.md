@@ -27,11 +27,11 @@ It supports creation both ```Debug``` and ```Release``` profiles sumultaneously 
 
 0. Get Windows machine.
 1. Install Clang, Zed.
-1+. Install Cmake, Ninja if you are planning to run projects with ```CMakeLists.txt```.
-2. Run Zed and do initial setup.
-3. Go to ```%AppData%\Zed``` in Explorer.
-4. Copy there ```tasks.json``` and all ```.ps1```-scripts.
-5. Edit ```ToolPaths.ps1``` . Replace all my default paths with your actual ones.
+2. [Optional] Install Cmake, Ninja if you are planning to run projects with ```CMakeLists.txt```.
+3. Run Zed and do initial setup.
+4. Go to ```%AppData%\Zed``` in Explorer.
+5. Copy there ```tasks.json``` and all ```.ps1```-scripts.
+6. Edit ```ToolPaths.ps1``` . Replace all my default paths with your actual ones.
 
 ### Usage
 
